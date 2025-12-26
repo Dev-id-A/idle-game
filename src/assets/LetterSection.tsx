@@ -1,11 +1,12 @@
 import { useDispatch } from "react-redux"
 import { increment } from "../states/counter"
 import { useSelector } from "react-redux"
+import type { RootState } from "../main"
 
 function LetterSection() {
 
   let dispatch = useDispatch()
-  let counter = useSelector(state => state.counter.value)
+  let counter = useSelector((state: RootState) => state.counter.value)
 
   return (
     <div className="w-full mt-10 border-b-3 flex flex-col items-center">
