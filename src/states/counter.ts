@@ -1,9 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit";
-import type { PayloadAction } from "@reduxjs/toolkit";
 
 const initialState = {
     value: 0,
-    clickLevel: 1
+    clickLevel: 1,
+    mailsForLevelUp: 10
 }
 
 const counterReducer = createSlice({
@@ -13,14 +13,16 @@ const counterReducer = createSlice({
         increment: (state) => {
             state.value += state.clickLevel
         },
-        reduceForPurchase: (state, action: PayloadAction<number>) => {
-            state.value -= action.payload
-        },
         levelUpClick: (state) =>{
-            state.clickLevel += 1
+            if(state.value >= state.mailsForLevelUp){
+                state.value -= state.mailsForLevelUp
+                state.mailsForLevelUp *= 2
+                state.clickLevel += 1
+                return;
+            }
         }
     }
 })
 
-export const {increment, reduceForPurchase, levelUpClick} = counterReducer.actions
+export const {increment, levelUpClick} = counterReducer.actions
 export default counterReducer.reducer
