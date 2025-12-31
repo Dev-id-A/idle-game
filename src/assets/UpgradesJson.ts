@@ -7,6 +7,7 @@ export const upgrades =
             mailsSended: 5,
             interval: 3000,
             cost: 50,
-            id: 1
+            id: 1,
+            actualLevel: 1
         }
     ]
