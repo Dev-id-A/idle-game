@@ -1,9 +1,7 @@
 # This is a personal project about an idle game
 
-Perfecto, ahí va más desarrollado pero manteniendo tu rollo:
-
-Idle game built with <span className="font-semibold">TypeScript</span> and <span className="font-semibold">Redux</span>, where I handle the full <span className="font-semibold">state management</span> to store all the game progress in <span className="font-semibold">localStorage</span>.
-The project focuses on <span className="font-semibold">data persistence</span>, clean state logic, and keeping the experience consistent between sessions.
+Idle game built with TypeScript and Redux, where I handle the full  state management to store all the game progress in localStorage.
+The project focuses on data persistence, clean state logic, and keeping the experience consistent between sessions.
 
 ---
 
