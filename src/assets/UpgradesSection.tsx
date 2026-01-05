@@ -14,7 +14,9 @@ function UpgradesSection() {
                 <div className="w-full flex flex-col gap-2 px-5">
                     <h2>{upgrade.name}</h2>
                     <h3>{upgrade.mailsSended} m/s</h3>
-                    <h3>{upgrade.interval}</h3>
+                    <div className="w-full h-2 border-2 rounded-full">
+                        <div className="h-full w-[50%] bg-[#98F5FF]"></div>
+                    </div>
                     <button className="border-2 rounded-md px-3 py-1 bg-green-300 w-1/2">
                         {upgrade.actualLevel > 1 ? "Upgrade":"Buy"} {upgrade.cost}</button>
                 </div>
