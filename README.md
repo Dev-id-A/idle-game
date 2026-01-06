@@ -6,3 +6,6 @@ The project focuses on data persistence, clean state logic, and keeping the expe
 ---
 
 # Este es un proyecto personal sobre un juego idle
+
+Proyecto idle desarrollado con TypeScript y Redux, donde gestiono todo el manejo de estados para almacenar el progreso completo del juego en localStorage.
+El proyecto se centra en la persistencia de datos, una lógica de estado limpia y en mantener una experiencia consistente entre sesiones.
