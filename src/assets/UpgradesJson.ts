@@ -6,6 +6,7 @@ export const upgrades =
             description: "A computer programmed to send automatic mails.",
             mailsSended: 5,
             interval: 1500,
+            actualTime: 0,
             cost: 50,
             id: 1,
             actualLevel: 1
@@ -16,6 +17,7 @@ export const upgrades =
             description: "Your first worker ready to send that electronics messages.",
             mailsSended: 25,
             interval: 5000,
+            actualTime: 0,
             cost: 200,
             id: 2,
             actualLevel: 1
