@@ -26,3 +26,4 @@ const counterReducer = createSlice({
 
 export const {increment, levelUpClick} = counterReducer.actions
 export default counterReducer.reducer
+
