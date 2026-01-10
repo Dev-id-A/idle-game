@@ -1,6 +1,10 @@
-import { upgrades } from "./UpgradesJson"
+import { useDispatch, useSelector } from "react-redux"
+import type { RootState } from "../main"
+import { levelUp } from "../states/upgrades"
 
 function UpgradesSection() {
+    const upgrades = useSelector((state: RootState)=> state.upgrades)
+    const dispatch = useDispatch()
   return (
     <section className="flex flex-col gap-2 p-2 w-full">
         {upgrades.map((upgrade)=>{
@@ -17,8 +21,8 @@ function UpgradesSection() {
                     <div className="w-full h-2 border-2 rounded-full">
                         <div className="h-full w-[50%] bg-[#98F5FF]"></div>
                     </div>
-                    <button className="border-2 rounded-md px-3 py-1 bg-green-300 w-1/2">
-                        {upgrade.actualLevel > 1 ? "Upgrade":"Buy"} {upgrade.cost}</button>
+                    <button onClick={()=>dispatch(levelUp(upgrade.id))} className="border-2 rounded-md px-3 py-1 bg-green-300 w-1/2">
+                        {upgrade.actualLevel > 0 ? "Upgrade":"Buy"} {upgrade.cost}</button>
                 </div>
 
             </div>)

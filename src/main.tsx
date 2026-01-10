@@ -5,10 +5,12 @@ import App from './App.tsx'
 import { configureStore } from '@reduxjs/toolkit'
 import { Provider } from 'react-redux'
 import counterReducer from "./states/counter.ts"
+import upgradesReducer from "./states/upgrades.ts"
 
 const store = configureStore({
   reducer: {
-    counter: counterReducer
+    counter: counterReducer,
+    upgrades: upgradesReducer
   }
 })
 

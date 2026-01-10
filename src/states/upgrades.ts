@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { upgrades } from "../assets/UpgradesJson";
 
-const upgradesSlice = createSlice({
+const upgradesReducer = createSlice({
     name: "upgrades",
     initialState: upgrades,
     reducers: {
@@ -14,5 +14,5 @@ const upgradesSlice = createSlice({
     }
 })
 
-export const {levelUp} = upgradesSlice.actions
-export default upgradesSlice.reducer
+export const {levelUp} = upgradesReducer.actions
+export default upgradesReducer.reducer
