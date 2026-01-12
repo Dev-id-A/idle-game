@@ -9,6 +9,8 @@ const upgradesReducer = createSlice({
             const upgrade = state.find(u => u.id === action.payload)
         if(upgrade){
             upgrade.actualLevel += 1
+            upgrade.cost *= 2
+
         }
         }   
     }
