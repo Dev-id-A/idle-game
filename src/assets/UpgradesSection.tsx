@@ -1,12 +1,31 @@
 import { useDispatch, useSelector } from "react-redux"
 import type { RootState } from "../main"
 import { levelUp } from "../states/upgrades"
+import { useEffect } from "react"
+import {addMails} from "../states/counter"
 
 function UpgradesSection() {
     const dispatch = useDispatch()
     const upgrades = useSelector((state: RootState)=> state.upgrades)
     let counter = useSelector((state: RootState) => state.counter.value)
 
+useEffect(()=>{
+    const intervals: number[] = []
+
+    upgrades.forEach(upgrade => {
+        if(upgrade.actualLevel>0){
+            const id = setInterval(()=>{
+                dispatch(addMails(upgrade.mailsSended))
+            }, upgrade.interval)
+        
+            intervals.push(id)
+
+        }
+    })
+
+    return() => intervals.forEach(clearInterval)
+
+},[upgrades, dispatch])
 
   return (
     <section className="flex flex-col gap-2 p-2 w-full">
