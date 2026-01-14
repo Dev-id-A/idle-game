@@ -23,11 +23,14 @@ const counterReducer = createSlice({
         },
         addMails: (state, action) => {
             state.value += action.payload
+        },
+        reduceMailsAfterBuy:(state, action) => {
+            state.value -= action.payload
         }
 
     }
 })
 
-export const {increment, levelUpClick, addMails} = counterReducer.actions
+export const {increment, levelUpClick, addMails, reduceMailsAfterBuy} = counterReducer.actions
 export default counterReducer.reducer
 

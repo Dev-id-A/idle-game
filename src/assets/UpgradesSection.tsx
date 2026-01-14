@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from "react-redux"
 import type { RootState } from "../main"
 import { levelUp } from "../states/upgrades"
 import { useEffect } from "react"
-import {addMails} from "../states/counter"
+import {addMails, reduceMailsAfterBuy} from "../states/counter"
 
 function UpgradesSection() {
     const dispatch = useDispatch()
@@ -51,7 +51,7 @@ useEffect(()=>{
                         onClick={()=>{
                         if(counter>= upgrade.cost){
                             dispatch(levelUp(upgrade.id))
-                            counter-=upgrade.cost
+                            dispatch(reduceMailsAfterBuy(upgrade.cost))
                         }}} 
                         className="border-2 rounded-md px-3 py-1 bg-green-300 w-2/3">
                         {upgrade.actualLevel > 0 ? "Upgrade":"Buy"} {upgrade.cost}</button>
