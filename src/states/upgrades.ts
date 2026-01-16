@@ -10,7 +10,9 @@ const upgradesReducer = createSlice({
         if(upgrade){
             upgrade.actualLevel += 1
             upgrade.cost *= 2
-
+            if(upgrade.actualLevel > 1){
+                upgrade.mailsSended = Math.round(upgrade.mailsSended * 1.5)
+            }
         }
         }   
     }

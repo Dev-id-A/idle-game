@@ -43,7 +43,7 @@ useEffect(()=>{
                         <h2>Lvl: {upgrade.actualLevel}</h2>
                     </div>
 
-                    <h3>{upgrade.mailsSended} m/s</h3>
+                    <h3>{upgrade.mailsSended} mails sended</h3>
                     <div className="w-full h-2 border-2 rounded-full">
                         <div className="h-full w-[50%] bg-[#98F5FF]"></div>
                     </div>
