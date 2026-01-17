@@ -13,6 +13,9 @@ const upgradesReducer = createSlice({
             if(upgrade.actualLevel > 1){
                 upgrade.mailsSended = Math.round(upgrade.mailsSended * 1.5)
             }
+            if(upgrade.actualLevel % 25 === 0){
+                upgrade.interval /= 1.5
+            }
         }
         }   
     }
