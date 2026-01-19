@@ -3,7 +3,8 @@ import UpgradesSection from "./assets/UpgradesSection"
 
 function App() {
   return (
-    <main className="h-screen w-screen flex flex-col items-center text-3xl">
+    <main className="h-screen w-screen text-3xl">
+      <div className="w-full h-[50vh] bg-white"></div>
       <LetterSection />
       <UpgradesSection />
     </main>

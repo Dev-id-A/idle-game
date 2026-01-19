@@ -11,14 +11,14 @@ function LetterSection() {
   let mailsForLevelUp = useSelector((state: RootState) => state.counter.mailsForLevelUp)
 
   return (
-    <div className="w-full mt-10 border-b-3 flex flex-col items-center gap-2">
-        <h1>Emails sended: {counter}</h1>
-        <h2>Click level: {clickLevel}</h2>
-        <button className="border-2 rounded-md px-3 py-1 bg-green-300" 
-          onClick={()=>dispatch(levelUpClick())}>Level up: {mailsForLevelUp} mails</button>
-        <button className="size-36" onClick={()=> dispatch(increment())}>
-          <img src="/SVG/letter.svg" alt="Letter" />
-        </button>
+      <div className="w-full bg-white h-[50vh] pt-10 border-b-3 flex flex-col items-center gap-2 fixed top-0 left-0">
+          <h1>Emails sended: {counter}</h1>
+          <h2>Click level: {clickLevel}</h2>
+          <button className="border-2 rounded-md px-3 py-1 bg-green-300" 
+            onClick={()=>dispatch(levelUpClick())}>Level up: {mailsForLevelUp} mails</button>
+          <button className="size-36" onClick={()=> dispatch(increment())}>
+            <img src="/SVG/letter.svg" alt="Letter" />
+          </button>
       </div>
   )
 }
