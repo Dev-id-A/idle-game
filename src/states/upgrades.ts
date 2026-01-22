@@ -17,6 +17,13 @@ const upgradesReducer = createSlice({
                 upgrade.interval /= 1.5
             }
         }
+        },
+        addTime(state, action){
+            const upgrade = state.find(u => u.id === action.payload)
+            if(upgrade)
+                if(upgrade.actualLevel >= 1){
+                    upgrade.actualTime += 50
+                }
         }   
     }
 })
