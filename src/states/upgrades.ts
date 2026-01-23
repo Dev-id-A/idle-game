@@ -20,13 +20,17 @@ const upgradesReducer = createSlice({
         },
         addTime(state, action){
             const upgrade = state.find(u => u.id === action.payload)
-            if(upgrade)
+            if(upgrade){
                 if(upgrade.actualLevel >= 1){
                     upgrade.actualTime += 50
                 }
-        }   
-    }
-})
+                if(upgrade.actualTime>=upgrade.interval){
+                    upgrade.actualTime -= upgrade.interval
+                }  
+            }
+            }   
+            }//End of reducer
+})//End of the slice
 
-export const {levelUp} = upgradesReducer.actions
+export const {levelUp, addTime} = upgradesReducer.actions
 export default upgradesReducer.reducer

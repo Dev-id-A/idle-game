@@ -1,8 +1,8 @@
 import { useDispatch, useSelector } from "react-redux"
 import type { RootState } from "../main"
-import { levelUp } from "../states/upgrades"
+import { levelUp, addTime } from "../states/upgrades"
 import { useEffect } from "react"
-import {addMails, reduceMailsAfterBuy} from "../states/counter"
+import { reduceMailsAfterBuy} from "../states/counter"
 
 function UpgradesSection() {
     const dispatch = useDispatch()
@@ -10,20 +10,14 @@ function UpgradesSection() {
     let counter = useSelector((state: RootState) => state.counter.value)
 
 useEffect(()=>{
-    const intervals: number[] = []
+    const intervals = setInterval(()=>{
+        upgrades.forEach((upgrade)=>{
+            if (upgrade.actualLevel >=1 ){
+                dispatch(addTime(upgrade.id))
+            }})
+        }, 50)
 
-    upgrades.forEach(upgrade => {
-        if(upgrade.actualLevel>0){
-            const id = setInterval(()=>{
-                dispatch(addMails(upgrade.mailsSended))
-            }, upgrade.interval)
-        
-            intervals.push(id)
-
-        }
-    })
-
-    return() => intervals.forEach(clearInterval)
+    return() => clearInterval(intervals)
 
 },[upgrades, dispatch])
 
@@ -45,7 +39,10 @@ useEffect(()=>{
 
                     <h3>{upgrade.mailsSended} mails sended</h3>
                     <div className="w-full h-2 border-2 rounded-full">
-                        <div className="h-full w-[50%] bg-[#98F5FF]"></div>
+                        <div className={`h-full bg-[#98F5FF]`}
+                        style={{
+                            width:`${Math.min(upgrade.actualTime/ upgrade.interval * 100, 100)}%`
+                        }}></div>
                     </div>
                     <button 
                         onClick={()=>{
