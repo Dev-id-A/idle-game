@@ -9,7 +9,8 @@ export const upgrades =
             actualTime: 0,
             cost: 50,
             id: 1,
-            actualLevel: 0
+            actualLevel: 0,
+            producting: false
         },
         {
             name: "Worker",
@@ -20,7 +21,8 @@ export const upgrades =
             actualTime: 0,
             cost: 200,
             id: 2,
-            actualLevel: 0
+            actualLevel: 0,
+            producting: false
         },
         {
             name: "Team",
@@ -31,7 +33,8 @@ export const upgrades =
             actualTime: 0,
             cost: 2500,
             id: 3,
-            actualLevel: 0
+            actualLevel: 0,
+            producting: false
         },
         {
             name: "Startup",
@@ -42,6 +45,7 @@ export const upgrades =
             actualTime: 0,
             cost: 10000,
             id: 4,
-            actualLevel: 0
+            actualLevel: 0,
+            producting: false
         }
     ]

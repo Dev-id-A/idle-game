@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from "react-redux"
 import type { RootState } from "../main"
 import { levelUp, addTime } from "../states/upgrades"
 import { useEffect } from "react"
-import { reduceMailsAfterBuy} from "../states/counter"
+import { addMails, reduceMailsAfterBuy} from "../states/counter"
 
 function UpgradesSection() {
     const dispatch = useDispatch()
@@ -12,7 +12,10 @@ function UpgradesSection() {
 useEffect(()=>{
     const intervals = setInterval(()=>{
         upgrades.forEach((upgrade)=>{
-            if (upgrade.actualLevel >=1 ){
+            if(upgrade.producting){
+                dispatch(addMails(upgrade.mailsSended))
+            }
+            if(upgrade.actualLevel >=1 ){
                 dispatch(addTime(upgrade.id))
             }})
         }, 50)

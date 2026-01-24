@@ -21,10 +21,12 @@ const upgradesReducer = createSlice({
         addTime(state, action){
             const upgrade = state.find(u => u.id === action.payload)
             if(upgrade){
+                upgrade.producting = false
                 if(upgrade.actualLevel >= 1){
                     upgrade.actualTime += 50
                 }
                 if(upgrade.actualTime>=upgrade.interval){
+                    upgrade.producting = true
                     upgrade.actualTime -= upgrade.interval
                 }  
             }
