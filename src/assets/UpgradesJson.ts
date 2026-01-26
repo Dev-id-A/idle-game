@@ -47,5 +47,17 @@ export const upgrades =
             id: 4,
             actualLevel: 0,
             producting: false
+        }, 
+        {
+            name: "Corporation",
+            src: "SVG/corporation.svg",
+            description: "A big corporation breaking all the standards of email delivery.",
+            mailsSended: 5000,
+            interval: 25000,
+            actualTime: 0,
+            cost: 30000,
+            id: 5,
+            actualLevel: 0,
+            producting: false
         }
     ]
