@@ -11,6 +11,7 @@ export const upgrades =
             id: 1,
             actualLevel: 0,
             producting: false
+            
         },
         {
             name: "Worker",
