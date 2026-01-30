@@ -1,6 +1,8 @@
 import { useDispatch, useSelector } from "react-redux"
 import type { RootState } from "../main"
 import { toggleIsOpen } from "../states/perks"
+import { upgrades } from "./UpgradesJson"
+
 
 function PerksSection() {
     const dispatch = useDispatch()
@@ -15,8 +17,14 @@ function PerksSection() {
             <img src="/SVG/arrow.svg" alt="Arrow"  className={`${isOpen ? "rotate-x-180":"rotate-x-0"}`}/>
         </button>
 
-        <div className="text-center pt-6">
+        <div className="h-full flex flex-col justify-around text-center py-6">
             <h1>Upgrades</h1>
+
+            {upgrades.map((upgrade)=>{
+              return(
+              <button className="text-2xl">{upgrade.name}</button>
+            )
+            })}
         </div>
     </div>
   )
