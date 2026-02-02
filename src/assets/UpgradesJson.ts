@@ -60,5 +60,17 @@ export const upgrades =
             id: 5,
             actualLevel: 0,
             producting: false
+        },
+        {
+            name: "Elite worker",
+            src: "SVG/crown.svg",
+            description: "The most charismatic man with a fast writing skills.",
+            mailsSended: 15000,
+            interval: 35000,
+            actualTime: 0,
+            cost: 100000,
+            id: 6,
+            actualLevel: 0,
+            producting: false
         }
     ]
