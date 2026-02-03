@@ -10,7 +10,13 @@ export const upgrades =
             cost: 50,
             id: 1,
             actualLevel: 0,
-            producting: false
+            producting: false,
+            perks:[
+                {
+                    name: "",
+                    adds: 0
+                }
+            ]
             
         },
         {
@@ -23,7 +29,13 @@ export const upgrades =
             cost: 200,
             id: 2,
             actualLevel: 0,
-            producting: false
+            producting: false,
+            perks:[
+                {
+                    name: "",
+                    adds: 0
+                }
+            ]
         },
         {
             name: "Team",
@@ -35,7 +47,13 @@ export const upgrades =
             cost: 2500,
             id: 3,
             actualLevel: 0,
-            producting: false
+            producting: false,
+            perks:[
+                {
+                    name: "",
+                    adds: 0
+                }
+            ]
         },
         {
             name: "Startup",
@@ -47,7 +65,13 @@ export const upgrades =
             cost: 10000,
             id: 4,
             actualLevel: 0,
-            producting: false
+            producting: false,
+            perks:[
+                {
+                    name: "",
+                    adds: 0
+                }
+            ]
         }, 
         {
             name: "Corporation",
@@ -59,7 +83,13 @@ export const upgrades =
             cost: 30000,
             id: 5,
             actualLevel: 0,
-            producting: false
+            producting: false,
+            perks:[
+                {
+                    name: "",
+                    adds: 0
+                }
+            ]
         },
         {
             name: "Elite worker",
@@ -71,6 +101,12 @@ export const upgrades =
             cost: 100000,
             id: 6,
             actualLevel: 0,
-            producting: false
+            producting: false,
+            perks:[
+                {
+                    name: "",
+                    adds: 0
+                }
+            ]
         }
     ]
