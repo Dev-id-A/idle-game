@@ -13,8 +13,14 @@ export const upgrades =
             producting: false,
             perks:[
                 {
-                    name: "",
-                    adds: 0
+                    name: "Perk",
+                    adds: 0,
+                    id: 101
+                }, 
+                {
+                    name: "Perk",
+                    adds: 0,
+                    id: 102
                 }
             ]
             
@@ -32,8 +38,9 @@ export const upgrades =
             producting: false,
             perks:[
                 {
-                    name: "",
-                    adds: 0
+                    name: "Perk",
+                    adds: 0,
+                    id: 201
                 }
             ]
         },
@@ -50,8 +57,9 @@ export const upgrades =
             producting: false,
             perks:[
                 {
-                    name: "",
-                    adds: 0
+                    name: "Perk",
+                    adds: 0,
+                    id: 301
                 }
             ]
         },
@@ -68,8 +76,9 @@ export const upgrades =
             producting: false,
             perks:[
                 {
-                    name: "",
-                    adds: 0
+                    name: "Perk",
+                    adds: 0,
+                    id: 401
                 }
             ]
         }, 
@@ -86,8 +95,9 @@ export const upgrades =
             producting: false,
             perks:[
                 {
-                    name: "",
-                    adds: 0
+                    name: "Perk",
+                    adds: 0,
+                    id: 501
                 }
             ]
         },
@@ -104,8 +114,9 @@ export const upgrades =
             producting: false,
             perks:[
                 {
-                    name: "",
-                    adds: 0
+                    name: "Perk",
+                    adds: 0,
+                    id: 601
                 }
             ]
         }

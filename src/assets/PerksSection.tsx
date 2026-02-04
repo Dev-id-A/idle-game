@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from "react-redux"
 import type { RootState } from "../main"
 import { toggleIsOpen } from "../states/perks"
 import { upgrades } from "./UpgradesJson"
+import React from "react"
 
 
 function PerksSection() {
@@ -22,7 +23,19 @@ function PerksSection() {
 
             {upgrades.map((upgrade)=>{
               return(
-              <button className="text-2xl">{upgrade.name}</button>
+                <React.Fragment key={upgrade.id}>
+                  <button className="text-2xl">{upgrade.name}</button>
+                  <div className="flex flex-center justify-center gap-5">
+                  {upgrade.perks.map((perk)=>{
+                    return(
+                      <div className="border h-12 w-12" key={perk.id}>
+                        <h3 className="text-xl">{perk.name}</h3>
+                      </div>
+                    )
+                  })}
+
+                  </div>
+                </React.Fragment>
             )
             })}
         </div>
