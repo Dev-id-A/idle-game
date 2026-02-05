@@ -25,7 +25,7 @@ useEffect(()=>{
 },[upgrades, dispatch])
 
   return (
-    <section className="flex flex-col gap-2 p-2 w-full">
+    <section className="flex flex-col gap-2 p-2 w-full lg:grid lg:grid-cols-2">
         {upgrades.map((upgrade)=>{
             return (
             <div className="border-2 flex flex-row items-center rounded-sm text-[20px] py-2" key={upgrade.id}>
