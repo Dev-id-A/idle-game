@@ -13,15 +13,15 @@ export const upgrades =
             producting: false,
             perks:[
                 {
-                    name: "Perk",
-                    adds: 0,
+                    name: "New components",
+                    description: "Adds new components to the computer and get faster at sending mails.",
+                    cost: 20000,
+                    unlocks: 25,
+                    moreFaster: true, 
+                    moreMails: false,
+                    adds: 25,
                     id: 101
                 }, 
-                {
-                    name: "Perk",
-                    adds: 0,
-                    id: 102
-                }
             ]
             
         },
