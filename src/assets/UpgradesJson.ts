@@ -21,7 +21,17 @@ export const upgrades =
                     moreMails: false,
                     adds: 25,
                     id: 101
-                }, 
+                },
+                {
+                    name: "Better software",
+                    description : "Download a new software that upgrades the quality of the mails.",
+                    cost: 150000,
+                    unlocks: 50,
+                    moreFaster: false, 
+                    moreMails: true,
+                    adds: 25,
+                    id: 102
+                }
             ]
             
         },
