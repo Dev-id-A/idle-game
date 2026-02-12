@@ -31,6 +31,16 @@ export const upgrades =
                     moreMails: true,
                     adds: 25,
                     id: 102
+                },
+                {
+                    name: "High fiber wi-fi",
+                    description : "A great conection internet for faster sending.",
+                    cost: 50000,
+                    unlocks: 75,
+                    moreFaster: true, 
+                    moreMails: false,
+                    adds: 35,
+                    id: 103
                 }
             ]
             
