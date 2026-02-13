@@ -41,6 +41,16 @@ export const upgrades =
                     moreMails: false,
                     adds: 35,
                     id: 103
+                },
+                {
+                    name: "Overclocking",
+                    description : "Exploit the maximun capacity of the computer for a better performance.",
+                    cost: 100000,
+                    unlocks: 100,
+                    moreFaster: true, 
+                    moreMails: true,
+                    adds: 40,
+                    id: 104
                 }
             ]
             
