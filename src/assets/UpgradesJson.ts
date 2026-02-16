@@ -76,6 +76,16 @@ export const upgrades =
                     moreMails: false,
                     adds: 35,
                     id: 201
+                },
+                {
+                    name: "Raise",
+                    description : "A well payed worker, works double.",
+                    cost: 200000,
+                    unlocks: 25,
+                    moreFaster: false, 
+                    moreMails: true,
+                    adds: 100,
+                    id: 202
                 }
             ]
         },
