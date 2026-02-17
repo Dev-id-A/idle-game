@@ -81,11 +81,21 @@ export const upgrades =
                     name: "Raise",
                     description : "A well payed worker, works double.",
                     cost: 200000,
-                    unlocks: 25,
+                    unlocks: 50,
                     moreFaster: false, 
                     moreMails: true,
                     adds: 100,
                     id: 202
+                },
+                {
+                    name: "Love and comprension",
+                    description : "Understand their needs and dreams and add more love to every email.",
+                    cost: 400000,
+                    unlocks: 75,
+                    moreFaster: false, 
+                    moreMails: true,
+                    adds: 50,
+                    id: 203
                 }
             ]
         },
