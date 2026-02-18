@@ -96,6 +96,16 @@ export const upgrades =
                     moreMails: true,
                     adds: 50,
                     id: 203
+                },
+                {        
+                    name: "Better Work Environment",
+                    description: "A workspace beyond the typical cubicle will make your employee happier.",
+                    cost: 800000,
+                    unlocks: 75,
+                    moreFaster: true, 
+                    moreMails: true,
+                    adds: 75,
+                    id: 204
                 }
             ]
         },
