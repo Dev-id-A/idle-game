@@ -101,7 +101,7 @@ export const upgrades =
                     name: "Better Work Environment",
                     description: "A workspace beyond the typical cubicle will make your employee happier.",
                     cost: 800000,
-                    unlocks: 75,
+                    unlocks: 100,
                     moreFaster: true, 
                     moreMails: true,
                     adds: 75,
@@ -121,9 +121,14 @@ export const upgrades =
             actualLevel: 0,
             producting: false,
             perks:[
-                {
-                    name: "Perk",
-                    adds: 0,
+                {        
+                    name: "Communication",
+                    description: "Vital if you want reach something.",
+                    cost: 300000,
+                    unlocks: 25,
+                    moreFaster: true, 
+                    moreMails: false,
+                    adds: 40,
                     id: 301
                 }
             ]
