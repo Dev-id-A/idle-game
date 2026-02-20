@@ -130,7 +130,17 @@ export const upgrades =
                     moreMails: false,
                     adds: 40,
                     id: 301
-                }
+                },
+                {        
+                    name: "Leader",
+                    description: "The know they need it for resolving problems.",
+                    cost: 800000,
+                    unlocks: 50,
+                    moreFaster: true, 
+                    moreMails: true,
+                    adds: 80,
+                    id: 302
+                },
             ]
         },
         {
