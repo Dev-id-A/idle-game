@@ -141,6 +141,16 @@ export const upgrades =
                     adds: 80,
                     id: 302
                 },
+                {        
+                    name: "Coffee machine",
+                    description: "We need to wake up and send mails, a lot of mails.",
+                    cost: 1500000,
+                    unlocks: 75,
+                    moreFaster: true, 
+                    moreMails: false,
+                    adds: 150,
+                    id: 303
+                },
             ]
         },
         {
