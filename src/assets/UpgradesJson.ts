@@ -151,6 +151,16 @@ export const upgrades =
                     adds: 150,
                     id: 303
                 },
+                {        
+                    name: "Group therapy",
+                    description: "Better understanding between employees doubles all production.",
+                    cost: 2500000,
+                    unlocks: 100,
+                    moreFaster: true, 
+                    moreMails: true,
+                    adds: 200,
+                    id: 304
+                },
             ]
         },
         {
