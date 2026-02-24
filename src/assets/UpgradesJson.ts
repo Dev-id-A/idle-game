@@ -176,8 +176,13 @@ export const upgrades =
             producting: false,
             perks:[
                 {
-                    name: "Perk",
-                    adds: 0,
+                    name: "Big idea",
+                    description: "The breakthrough idea that makes a startup grow.",
+                    cost: 1000000,
+                    unlocks: 25,
+                    moreFaster: false, 
+                    moreMails: true,
+                    adds: 50,
                     id: 401
                 }
             ]
