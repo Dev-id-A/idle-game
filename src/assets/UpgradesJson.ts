@@ -184,7 +184,17 @@ export const upgrades =
                     moreMails: true,
                     adds: 50,
                     id: 401
-                }
+                },
+                {
+                    name: "Inversion",
+                    description: "Invest in your team and enjoy the returns.",
+                    cost: 5000000,
+                    unlocks: 50,
+                    moreFaster: true, 
+                    moreMails: true,
+                    adds: 100,
+                    id: 402
+                },
             ]
         }, 
         {
