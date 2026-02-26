@@ -195,6 +195,16 @@ export const upgrades =
                     adds: 100,
                     id: 402
                 },
+                {
+                    name: "Vacation",
+                    description: "Give them a vacation and they’ll come back stronger.",
+                    cost: 7000000,
+                    unlocks: 75,
+                    moreFaster: true, 
+                    moreMails: true,
+                    adds: 10,
+                    id: 403
+                },
             ]
         }, 
         {
