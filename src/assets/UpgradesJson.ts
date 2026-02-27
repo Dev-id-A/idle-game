@@ -202,8 +202,18 @@ export const upgrades =
                     unlocks: 75,
                     moreFaster: true, 
                     moreMails: true,
-                    adds: 10,
+                    adds: 150,
                     id: 403
+                },
+                {
+                    name: "Boss",
+                    description: "Hire a boss who can lead the team.",
+                    cost: 12000000,
+                    unlocks: 100,
+                    moreFaster: true, 
+                    moreMails: true,
+                    adds: 200,
+                    id: 404
                 },
             ]
         }, 
