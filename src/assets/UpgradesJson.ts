@@ -230,8 +230,13 @@ export const upgrades =
             producting: false,
             perks:[
                 {
-                    name: "Perk",
-                    adds: 0,
+                    name: "CEO",
+                    description: "Hire a CEO who can lead the corporation.",
+                    cost: 5000000,
+                    unlocks: 25,
+                    moreFaster: false, 
+                    moreMails: true,
+                    adds: 100,
                     id: 501
                 }
             ]
