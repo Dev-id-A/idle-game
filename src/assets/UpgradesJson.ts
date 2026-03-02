@@ -238,7 +238,18 @@ export const upgrades =
                     moreMails: true,
                     adds: 100,
                     id: 501
-                }
+                },
+                {
+                    name: "HR",
+                    description: "We need to hire the best of the best, and that's why we need HR.",
+                    cost: 15000000,
+                    unlocks: 50,
+                    moreFaster: true, 
+                    moreMails: true,
+                    adds: 150,
+                    id: 502
+                },
+                
             ]
         },
         {
