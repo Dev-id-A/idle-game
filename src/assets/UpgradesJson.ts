@@ -249,6 +249,16 @@ export const upgrades =
                     adds: 150,
                     id: 502
                 },
+                {
+                    name: "Gym",
+                    description: "Why not?",
+                    cost: 25000000,
+                    unlocks: 75,
+                    moreFaster: true, 
+                    moreMails: true,
+                    adds: 150,
+                    id: 503
+                },
                 
             ]
         },
